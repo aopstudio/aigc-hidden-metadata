@@ -3,7 +3,7 @@
 import json
 from PyPDF2 import PdfReader, PdfWriter
 
-def add_pdf_tag(input_pdf, output_pdf, metadata_dict):
+def add_pdf_mark(input_pdf, output_pdf, metadata_dict):
     """
     在 PDF 的 Document Information Dictionary 中写入自定义 /AIGC 字段
     :param input_pdf: 输入 PDF 文件路径
@@ -45,7 +45,7 @@ metadata = {
 }
 
 if __name__ == "__main__":
-    add_pdf_tag("input.pdf", "output.pdf", metadata)
+    add_pdf_mark("input.pdf", "output.pdf", metadata)
 
 # 检查写入的元数据
 f'''

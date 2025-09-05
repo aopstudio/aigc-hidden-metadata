@@ -8,7 +8,7 @@ os.environ["DYLD_LIBRARY_PATH"] = "/opt/homebrew/lib"   # 注意要根据自己�
 from libxmp import XMPFiles, XMPMeta
 from libxmp.consts import XMP_NS_DC
 
-def add_image_tag(file_path):
+def add_image_mark(file_path):
     AIGC_NS_URI = "http://www.tc260.org.cn/ns/AIGC/1.0/"
     AIGC_NS_PREFIX = "TC260"
     XMPMeta.register_namespace(AIGC_NS_URI, AIGC_NS_PREFIX)
@@ -28,7 +28,7 @@ def add_image_tag(file_path):
     finally:
         xmpfile.close_file()
 if __name__ == '__main__':
-    add_image_tag("sample.jpg")
+    add_image_mark("sample.jpg")
 
 
 # 检查写入的元数据

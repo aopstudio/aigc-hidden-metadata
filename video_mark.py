@@ -6,7 +6,7 @@ import ffmpeg
 input_file = "input.mp4"
 output_file = "output.mp4"
 
-def add_video_tag(input_file, output_file):
+def add_video_mark(input_file, output_file):
     metadata = {
         "AIGC": '{"Label":"value1","ContentProducer":"value2","ProduceID":"value3",'
                 '"ReservedCode1":"value4","ContentPropagator":"value5",'
@@ -26,7 +26,7 @@ def add_video_tag(input_file, output_file):
     )
 
 if __name__ == "__main__":
-    add_video_tag(input_file, output_file)
+    add_video_mark(input_file, output_file)
 
 # 检查新的元数据是否写入成功
 # ffprobe -i output.mp4
