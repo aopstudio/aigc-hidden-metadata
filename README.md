@@ -5,7 +5,7 @@
 
 ## 功能特性
 
-- [x] 图片文件（JPG/PNG）：支持 **exempi** 和 **exiv2** 两种方案  
+- [x] 图片文件（JPG/PNG）：基于`exiv2`添加隐式标识
 - [x] 音频文件（MP3）：基于 `ffmpeg` 添加隐式标识  
 - [x] 视频文件（MP4）：基于 `ffmpeg` 添加隐式标识  
 - [x] 文本文件（PDF）：基于 `PyPDF2` 写入自定义 metadata  
@@ -32,25 +32,25 @@ pip install python-xmp-toolkit pyexiv2 ffmpeg-python PyPDF2
 ### 图片（exiv2 方案）
 
 ```python
-python image_exiv2.py
+python image_mark.py
 ```
 
 ### 音频
 
 ```python
-python audio_ffmpeg.py
+python audio_mark.py
 ```
 
 ### 视频
 
 ```python
-python video_ffmpeg.py
+python video_mark.py
 ```
 
 ### PDF
 
 ```python
-python pdf_metadata.py
+python pdf_mark.py
 ```
 
 ## 效果验证
